@@ -4,11 +4,21 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config ./scripts/webpack.base.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "core-js": "^3.18.2",
     "koa": "^2.13.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^8.2.2",
+    "webpack": "^5.58.1",
+    "webpack-cli": "^4.9.0"
   }
 }
